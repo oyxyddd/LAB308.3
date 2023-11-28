@@ -9,3 +9,18 @@ for(let i = 1; i <= 100; i++){
     }
 }
 
+// Part 2: Prime Time 
+let n=45;
+//find the next prime number
+let isPrime; 
+do{
+    n++;
+    isPrime = true;
+    for (let j = 2; j < n; j++ ){
+        if (n % j === 0 ){
+            isPrime=false;
+            break;
+        }
+    }
+}while(!isPrime)
+console.log(n);
